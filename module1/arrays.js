@@ -24,4 +24,29 @@ console.log(arrr instanceof Array);
 // isArray is prefered over the instanceof method
 
 //-------------------------------------------------------------INSTANCE METHODS OF ARRAY
+const concatedarray = arr.concat(arra);
+console.log(concatedarray);
+concatedarray.push(4);
+console.log(concatedarray);
+console.log(arra);
 
+//entries() - returns array iterator with key/value pair
+const iteratorr = arr.entries();
+console.log(iteratorr.next().value);
+console.log(iteratorr.next().value);
+
+// entries() and for-of loop
+const aa = ['a','b','c'];
+const it = aa.entries();
+for(const ele of it){
+    console.log(ele);
+}
+
+// every() - checks if all the elements pass the test or not.
+//check for even number
+
+const check = (number) => (number%2 == 0);
+console.log(arr.every(check));
+
+const evenArray = [2,4,6,8,0,22,44,24,42,88,64,644];
+console.log(evenArray.every(check));
