@@ -50,3 +50,8 @@ console.log(arr.every(check));
 
 const evenArray = [2,4,6,8,0,22,44,24,42,88,64,644];
 console.log(evenArray.every(check));
+
+// filter()
+let arraynum = [1,23,4,5,44,3,543,53,2445,452,1,,34,54,2,34,35,245,23];
+const bigInt = (num) => (num>10);
+console.log(arraynum.filter(bigInt));
