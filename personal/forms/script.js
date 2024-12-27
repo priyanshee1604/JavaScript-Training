@@ -22,3 +22,10 @@ console.log(username.value);
 console.log(form[0].password);
 console.log(form[0].elements['testing']);
 console.log(form[0].elements['radiotest']);
+
+let select = form[0].elements['testtheselect'];
+let options = select.options;
+console.log(options);
+for(let i=0; i<options.length; i++){
+    console.log(options[i].value);
+}
