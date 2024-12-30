@@ -5,7 +5,7 @@
 //   c. Print “List has a prime no” if there is a prime no in it
 //   d. Remove duplicate values from the list ()
 
-const arr = [10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
+const arr = [10, 1,1,1,1,1, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
 
 function sum(arr){
     let sum = 0;
@@ -61,8 +61,14 @@ function checkForAtlestOnePrime(arr){
     }
 }
 
+function removeDuplicates(arr){
+    let set = new Set(arr);
+    console.log(set);
+}
+
 sum(arr);
 minimum(arr);
 maximum(arr);
 checkForPrime(arr);
 checkForAtlestOnePrime(arr);
+removeDuplicates(arr);
