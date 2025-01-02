@@ -1,10 +1,17 @@
-// Implement a simple code to use a Promise
-
 let promise = fetch('https://fakestoreapi.com/products');
 console.log(promise);
 
-promise.then((response)=>{console.log(response.json())});
+//chaining promise
+promise.then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));
 
+// Implement a simple code to use a Promise
+let myPromise = new Promise((resolve, reject)=>{
+    let truee = true;
+    if(truee){
+        resolve("Promise resolved");
+    }else{
+        reject("Prmise rejected");
+    }
+});
 
-let promiise = new Promise(setTimeout(resolve, 10000));
-const resolve = ()=> console.log(`hello world`);
+myPromise.then(result => alert(result)).catch(err => alert(err));
