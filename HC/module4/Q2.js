@@ -1,0 +1,10 @@
+let names = ["Amit Kumar",  "Rahul Dixit",  "Ravi Joshi",  "Rohit Verma",  "Ajay Jain"];
+let regexA = /^[A]/;
+let regexR = /^[r]/i;
+let regexI = /i$/i;
+let namesWithA = names.filter(name => regexA.test(name));
+let nameWithR = names.filter(name => regexR.test(name));
+let endWithI = names.filter(name => regexI.test(name));
+console.log(namesWithA);
+console.log(nameWithR);
+console.log(endWithI);
