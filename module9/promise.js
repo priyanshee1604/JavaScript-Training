@@ -3,7 +3,7 @@ console.log(promise);
 
 //chaining promise
 promise.then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));
-
+//promise async --> //.json() async thus we changed promises here.
 // Implement a simple code to use a Promise
 let myPromise = new Promise((resolve, reject)=>{
     let truee = true;

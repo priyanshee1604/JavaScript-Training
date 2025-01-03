@@ -1,10 +1,13 @@
-let names = ["Amit Kumar",  "Rahul Dixit",  "Ravi Joshi",  "Rohit Verma",  "Ajay Jain"];
-let regexA = /^[A]/;
-let regexR = /^[r]/i;
+let names = ["Amit Kumar", "Priyanshee Sisodiya", "Rahul Dixit",  "Ravi Joshi",  "Rohit Verma",  "Ajay Jain"];
+let regexA = /^A/;
+let regexR = /^r/i;
+let regexAP = /^[ap]/i;
 let regexI = /i$/i;
 let namesWithA = names.filter(name => regexA.test(name));
 let nameWithR = names.filter(name => regexR.test(name));
 let endWithI = names.filter(name => regexI.test(name));
+let startwithAorP = names.filter(name => regexAP.test(name));
+console.log(startwithAorP);
 console.log(namesWithA);
 console.log(nameWithR);
 console.log(endWithI);

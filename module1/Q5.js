@@ -5,7 +5,7 @@
 //   c. Print “List has a prime no” if there is a prime no in it
 //   d. Remove duplicate values from the list ()
 
-const arr = [10, 1,1,1,1,1, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
+const arr = [10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
 
 function sum(arr){
     let sum = 0;
@@ -38,7 +38,7 @@ function maximum(arr){
 function isPrime(num){
     if(num<2) return false;
     for(let y=2; y<num; y++){
-        if(num%y == 0) return false;
+        if(num%y === 0) return false;
     }
     return true;
 }
