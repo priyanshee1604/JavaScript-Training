@@ -9,7 +9,7 @@ function savingthedata(){
     if(textarea.value){
         save = true;
     }else{
-        alert('enter something.');
+        alert('Enter something.');
     }
 }
 

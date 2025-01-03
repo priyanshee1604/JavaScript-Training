@@ -1,4 +1,5 @@
-// Implement 2 event listener on click event of which one executes on bubbling and while other on capture
+// Implement 2 event listener on click event of 
+// which one executes on bubbling and while other on capture
 const div = document.querySelector("div");
 const button = document.querySelector("button");
 function eventHandler(e){

@@ -1,5 +1,5 @@
 let promise = fetch('https://fakestoreapi.com/products');
-console.log(promise);
+console.log(promise); // prints an object of type promise - in pending state.
 
 //chaining promise
 promise.then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));
